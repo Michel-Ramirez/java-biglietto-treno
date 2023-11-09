@@ -24,15 +24,15 @@ public class CalcolaBiglietto {
 		if(age < 19) {
 			
 			double amountDiscount = basePrice * underDiscount;
-			double finalePrice = basePrice - amountDiscount;
+			double finalPrice = basePrice - amountDiscount;
 			
-			System.out.println("L'età inserita è: " + age + " quindi under 18" + " Il prezzo del biglietto scontato è: " + finalePrice);
+			System.out.println("L'età inserita è: " + age + " quindi under 18" + " Il prezzo del biglietto scontato è: " + String.format("%.2f", finalPrice));
 			
 		} else if (age > 65) {
 			double amountDiscount = basePrice * overDiscont;
-			double finalePrice = basePrice - amountDiscount;
+			double finalPrice = basePrice - amountDiscount;
 			
-			System.out.println("L'età inserita è: " + age + " quindi over 65" + " Il prezzo del biglietto scontato è: " + finalePrice);
+			System.out.println("L'età inserita è: " + age + " quindi over 65" + " Il prezzo del biglietto scontato è: " + String.format("%.2f", finalPrice));
 			
 		} else {
 			
